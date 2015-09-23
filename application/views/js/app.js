@@ -1,6 +1,6 @@
 
-angular.module('app', ['ui.bootstrap']);
-angular.module('app').controller('HackerPaginationCtrl', function($scope, $http) {
+angular.module('paginationApp', ['ui.bootstrap']);
+angular.module('paginationApp').controller('HackerPaginationCtrl', function($scope, $http) {
 
 	$scope.currentPage = 1;
 	$scope.allNews = [];
