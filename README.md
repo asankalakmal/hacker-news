@@ -22,18 +22,18 @@ This application display the list of hacker news according to the API parameters
 // This is the hacker news api URL
 // This url order by newest news first (search_by_date)
 // If you don't need to use it plaese use (search instead of using search_by_date)
-
+```php
 'newsApiURL' => 'http://hn.algolia.com/api/v1/search_by_date'
-
+```
 Other Filter parameters 
-
+```php
 'newsParameters' => [
     	'query' => 'github',   						// Filter the github news
     	'restrictSearchableAttributes' => 'url', 	// The filtered parameter restrict to the URL
     	'numericFilters' => 'points>1000',			// Filter by author points 1000+
         'hitsPerPage' => 10   						// Number of news per page 
 ]
-
+```
 ### Adding New Files:
 
 Adding Controller: 
