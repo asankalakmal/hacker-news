@@ -10,7 +10,7 @@ return [
     | This option controls the Hacker news api url.
     |
     */
-    'BaseURL' => 'http://localhost/MVC-master/',
+    'BaseURL' => 'http://localhost/hacker-news/index.php',
 
     /*
     |--------------------------------------------------------------------------
@@ -33,8 +33,8 @@ return [
     'newsParameters' => [
     	'query' => 'github',
     	'restrictSearchableAttributes' => 'url',
+    	'numericFilters' => 'points>1000',
         'hitsPerPage' => 10,
-    	//'numericFilters' => 'points>1000'
     ]
 
 ];

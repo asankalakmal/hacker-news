@@ -1,6 +1,6 @@
 
 angular.module('app', ['ui.bootstrap']);
-angular.module('app').controller('PaginationDemoCtrl', function($scope, $http) {
+angular.module('app').controller('HackerPaginationCtrl', function($scope, $http) {
 
 	$scope.currentPage = 1;
 	$scope.allNews = [];
@@ -9,6 +9,7 @@ angular.module('app').controller('PaginationDemoCtrl', function($scope, $http) {
   	getData();
 
 	function getData() {
+		// Request the internal server to get the API data
 	    $http.get("index.php?controller=api&action=getNewsList&page=" + $scope.currentPage)
 	      .then(function(response) {
 	        $scope.totalItems = response.data.nbPages * response.data.hitsPerPage;

@@ -1,11 +1,11 @@
 
 <?php require 'application/views/layouts/header.php'; ?>
 
-<div ng-controller="PaginationDemoCtrl">
+<div ng-controller="HackerPaginationCtrl">
 <!--panel-->
 <div class="panel panel-primary">
     <!-- Default panel contents -->
-    <div class="panel-heading">Github News</div>
+    <div class="panel-heading">Hacker News - Github</div>
     	<div class="panel-body">
 
 				<table class="table" ng-show="showTable === true">

@@ -1,9 +1,11 @@
 <?php
 
+// Automatically find the site directory path
 $site_path = realpath(dirname(__FILE__));
 define ('__SITE_PATH', $site_path);
 
-function autoload($className) {
+// On demand load the PHP clasess
+function __autoload($className) {
 
     $filename = realpath(dirname(__FILE__)) . '/application/' . str_replace('\\', '/', $className) . ".class.php";
     if (file_exists($filename)) {
@@ -14,4 +16,3 @@ function autoload($className) {
     }
     return FALSE;
 }
-spl_autoload_register('autoload');
