@@ -6,22 +6,21 @@
 This application is display list of hacker news from Y combinator API (https://hn.algolia.com/api).
 
 ## Installation
-
-Checkout a copy of the source files in to your webserver head over to your app's config in /application/config/config.php and update the "BaseURL" (You can update 'newsParameters' also).
+Checkout a copy of the source files in to your web server and change your app's config in /application/config/config.php if required. You can update the "BaseURL" and/or 'newsParameters'.
 
 For the unit test if you don't like to install phpunit into server, please run composer.json file to install dependencies.
 
 ## Features and Documentation
 
-This web application develop using PHP, Twitter Bootstrap, Angular js, jQuery, css/html. We didn't use any PHP framework, but created a simple MVC structure framework.
+This web application is developed using PHP, Twitter Bootstrap, Angular js, jQuery, css/html. It doesn't use any PHP framework, but a simple MVC structure framework implemented by me.
 
-This application display the list of hacker news according to the API parameters
+This application display the list of hacker news according to the API parameters.
 
 ### API parameters
 ```php
 // This is the hacker news api URL
-// This url order by newest news first (search_by_date)
-// If you don't need to use it plaese use (search instead of using search_by_date)
+// This url orders the news based on date so that the latest news displayed first (search_by_date)
+// If you don't want to use it please use (search instead of using search_by_date)
 
 'newsApiURL' => 'http://hn.algolia.com/api/v1/search_by_date'
 
@@ -66,8 +65,8 @@ You have to follow [model name]Model.class.php file name structure
 
 ## Tests
 
-This project use PHP Unittest with selenium test.
-Unit test files can see on "application/test/" directory
+This project uses PHP Unittest with selenium test.
+Unit test files can be found in "application/test/" directory
 
 ## License
 
