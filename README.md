@@ -18,15 +18,15 @@ This web application develop using PHP, Twitter Bootstrap, Angular js, jQuery, c
 This application display the list of hacker news according to the API parameters
 
 ### API parameters
-
+```php
 // This is the hacker news api URL
 // This url order by newest news first (search_by_date)
 // If you don't need to use it plaese use (search instead of using search_by_date)
-```php
+
 'newsApiURL' => 'http://hn.algolia.com/api/v1/search_by_date'
-```
-Other Filter parameters 
-```php
+
+//Other Filter parameters 
+
 'newsParameters' => [
     	'query' => 'github',   						// Filter the github news
     	'restrictSearchableAttributes' => 'url', 	// The filtered parameter restrict to the URL
