@@ -22,6 +22,7 @@ This application display the list of hacker news according to the API parameters
 // This is the hacker news api URL
 // This url order by newest news first (search_by_date)
 // If you don't need to use it plaese use (search instead of using search_by_date)
+
 'newsApiURL' => 'http://hn.algolia.com/api/v1/search_by_date'
 
 Other Filter parameters 
@@ -48,14 +49,14 @@ You have to follow [model name]Model.class.php file name structure
     .
     ├── application                   # All application related files
     |	├── app                     		# Core system files (Base files)
-	|   ├── config                			# PHP configuration related files
+	|   ├── config                		# PHP configuration related files
 	|   ├── controllers                 	# Controller related files
-	|   ├── models							# Model related files
-	|  	├── Tests                           # PHP Unit test related files
+	|   ├── models						# Model related files
+	|  	├── Tests                       	# PHP Unit test related files
 	|   └── views
 	|		├── js                     		# Javascript related files
 	|   	├── layout                		# Layout related files (header.php, footer.php)                        
-	|   	└── index.php					# main view page of the system
+	|   	└── index.php						# main view page of the system
     ├── index.php                     # Application loading file
     ├── bootstrap.php                 # Bootstrap file (classes autoload)
     ├── composer.json                 # Required libraries (PHP unit tests related)
