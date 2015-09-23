@@ -3,7 +3,7 @@
 
 ## What is this project?
 
-This application is display list of hacker news from Y combinator API (http://hn.algolia.com/api).
+This application is display list of hacker news from Y combinator API (https://hn.algolia.com/api).
 
 ## Installation
 
