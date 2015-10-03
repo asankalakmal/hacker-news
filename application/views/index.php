@@ -6,7 +6,7 @@
 <div class="panel panel-primary">
     <!-- Default panel contents -->
     <div class="panel-heading">Hacker News - Github</div>
-    	<div class="panel-body">
+    	<div class="panel-body" ng-init="pageChanged()">
 
 				<table class="table" ng-show="showTable === true">
 					<thead>
